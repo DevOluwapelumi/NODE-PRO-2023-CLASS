@@ -42,3 +42,15 @@ For the Node.js-related content:
                 #NodeEcosystem
                 #Serverless
                 #Electron
+
+
+For your specific class or group:
+
+                #NodeClass2023
+                #NodeLearning
+                #NodeDevelopment
+                #NodeStudents
+                #NodeEducation
+                #ProgrammingClass
+                #TechTraining
+                #StudentDevelopers
