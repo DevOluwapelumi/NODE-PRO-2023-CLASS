@@ -8,3 +8,5 @@ Here are some key features and concepts associated with Node.js:
 
 Non-blocking and Asynchronous: Node.js uses an event-driven, non-blocking I/O model, which means that it can handle many concurrent connections without blocking the execution of other code. This makes it well-suited for building real-time applications like chat applications, online games, and streaming services.
 Package Management: Node.js has a package manager called npm (Node Package Manager), which is one of the largest and most active package ecosystems in the world. Developers can easily install and manage third-party libraries and modules using npm.
+Single-threaded Event Loop: Node.js applications are single-threaded, but they can efficiently handle many concurrent connections because of its event loop mechanism. The event loop allows Node.js to execute I/O operations asynchronously and efficiently.
+Modules: Node.js uses a module system that allows you to organize your code into reusable and encapsulated components. Built-in modules provide functionality for various tasks like file I/O, networking, and working with the file system.
