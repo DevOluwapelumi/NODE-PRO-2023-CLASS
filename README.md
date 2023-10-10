@@ -13,3 +13,12 @@ Modules: Node.js uses a module system that allows you to organize your code into
 Cross-Platform: Node.js is cross-platform and runs on various operating systems, including Windows, macOS, and Linux.
 V8 Engine: Node.js leverages the V8 JavaScript engine, which is also used in Google Chrome. This engine compiles JavaScript into machine code, resulting in fast execution.
 Community and Ecosystem: Node.js has a vibrant and active developer community, which means that there are a vast number of libraries, frameworks, and tools available for building a wide range of applications.
+
+Node.js is commonly used in conjunction with web frameworks like Express.js to create web servers and RESTful APIs, but it can be applied to various types of projects, from serverless functions to desktop applications using frameworks like Electron.
+
+To work with Node.js, you need to install it on your system, 
+        
+        npm init -y
+        and follow the other processes by
+        npm i ejs, express,
+and you can start writing JavaScript code using the Node.js runtime environment.
