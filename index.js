@@ -33,14 +33,46 @@ app.get("/signin", (req, res)=> {
      res.render("signin")
 })
 app.get("/signup", (req, res)=> {
-    res.render("signup")
+    res.render("signup", {message:""})
 })
-app.post("/signup", (req, res) => {
-     console.log(req.body);
+app.get("/dash", (req, res) => {
+    userModel.find().then((result) => {
+        console.log(result);
+        res.render("dash", {result:result})
+    }).catch((err) => {
+        console.log(err);
+    })
+})
+// app.post("/signup", async (req, res) => {
+//      console.log(req.body);
+//     console.log("am here");
+//     try{
+//     let user = new userModel(req.body)
+//     await user.save()
+//         console.log("User Saved")
+//     } catch (err) {
+//         console.log("Error Creating user:", err);
+//         res.render("signup", { message: "user could not be Created" });
+//     }
+// })
+app.post("/signup", async (req, res) => {
+    console.log(req.body);
     console.log("am here");
     let user = new userModel(req.body)
-    user.save()
-})
+    user.save().then(() => {
+        console.log("User Saved")
+        res.render("signup", { message: "User Successfully" });
+        res.redirect("signin")
+    }).catch((err) => {
+        console.log("Error Creating user:", err);
+        res.render("signup", { message: "User could not be Created" });
+    })
+}
+);
+
+
+
+
 
 app.get("/index", (req, res) =>{
     res.send([{
